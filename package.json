@@ -1,5 +1,6 @@
 {
   "name": "fling",
+  "version": "1.0.0",
   "private": true,
   "description": "owo js client",
   "bin": "bin/fling.js",
