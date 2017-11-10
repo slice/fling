@@ -1,0 +1,10 @@
+{
+  "name": "fling",
+  "private": true,
+  "description": "owo js client",
+  "bin": "bin/fling.js",
+  "main": "lib/fling.js",
+  "dependencies": {
+    "snekfetch": "^3.5.8"
+  }
+}
