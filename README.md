@@ -14,20 +14,24 @@ Another tiny client for [@whats-this](https://whats-th.is/).
 ```js
 const fling = require('fling');
 
+const options = {
+  token: 'XXXX-XXXX-XXXX-XXXX-XXXX'
+};
+
 // ①: Usage with a file on disk
-fling('my_file.txt')
+fling('my_file.txt', options)
   .then(r => console.log(r.files[0].url)) // -> xxxxxx.txt
   .catch(err => ...);
 
 // ②: Usage with a buffer
 const buffer = getABufferSomehow();
-fling(buffer)
+fling(buffer, options)
   .then(...)
   .catch(...);
 
 // ③: Usage in an `AsyncFunction`
 const task = async () => {
-  await fling(...);
+  await fling(..., options);
 };
 ```
 
